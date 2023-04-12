@@ -80,4 +80,4 @@ customer         | customer_id
 ```
 #### Ответ: 
 
-![Скрин](https://github.com/Karhq/12.2_hw_DDL-DML/blob/main/num9.png)
+![Скрин](https://github.com/Karhq/12.2_hw_DDL-DML/blob/main/num91.png)
