@@ -78,4 +78,6 @@ ALTER USER 'sys_test'@'localhost' IDENTIFIED WITH mysql_native_password BY 'pass
 Название таблицы | Название первичного ключа
 customer         | customer_id
 ```
+#### Ответ: 
 
+![Скрин](https://github.com/Karhq/12.2_hw_DDL-DML/blob/main/num9.png)
