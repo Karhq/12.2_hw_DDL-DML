@@ -31,6 +31,38 @@ ALTER USER 'sys_test'@'localhost' IDENTIFIED WITH mysql_native_password BY 'pass
 
 #### Ответ:  
 
+1.1. Поднимите чистый инстанс MySQL версии 8.0+. Можно использовать локальный сервер или контейнер Docker.
+Устанавливаем MySQl через wget.  
+![Скрин](https://github.com/Karhq/12.2_hw_DDL-DML/blob/main/num1.png)   
+  
+1.2. Создайте учётную запись sys_temp.   
+![Скрин](https://github.com/Karhq/12.2_hw_DDL-DML/blob/main/num2.png)   
+
+1.3. Выполните запрос на получение списка пользователей в базе данных. (скриншот)
+![Скрин](https://github.com/Karhq/12.2_hw_DDL-DML/blob/main/num3.png)   
+  
+1.4. Дайте все права для пользователя sys_temp. 
+![Скрин](https://github.com/Karhq/12.2_hw_DDL-DML/blob/main/num4.png)   
+  
+1.5. Выполните запрос на получение списка прав для пользователя sys_temp. (скриншот)
+![Скрин](https://github.com/Karhq/12.2_hw_DDL-DML/blob/main/num5.png)   
+  
+1.6. Переподключитесь к базе данных от имени sys_temp.
+![Скрин](https://github.com/Karhq/12.2_hw_DDL-DML/blob/main/num6.png)   
+
+Для смены типа аутентификации с sha2 используйте запрос: 
+```sql
+ALTER USER 'sys_test'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+```
+1.6. По ссылке https://downloads.mysql.com/docs/sakila-db.zip скачайте дамп базы данных.
+1.7. Восстановите дамп в базу данных.
+![Скрин](https://github.com/Karhq/12.2_hw_DDL-DML/blob/main/num7.1.png)   
+![Скрин](https://github.com/Karhq/12.2_hw_DDL-DML/blob/main/num7.2.png)   
+![Скрин](https://github.com/Karhq/12.2_hw_DDL-DML/blob/main/num7.3.png)   
+  
+1.8. При работе в IDE сформируйте ER-диаграмму получившейся базы данных. При работе в командной строке используйте команду для получения всех таблиц базы данных. (скриншот)
+![Скрин](https://github.com/Karhq/12.2_hw_DDL-DML/blob/main/num8.png)   
+
 
 
 ### Задание 2
